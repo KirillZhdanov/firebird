@@ -1,12 +1,13 @@
+import 'src/components/UserInfoModal/UserInfoModal.scss';
+
+import type { FC } from 'react';
 import { createPortal } from 'react-dom';
 import { FaTimes } from 'react-icons/fa';
-import 'src/components/UserInfoModal/UserInfoModal.scss';
-import type { FC } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { User } from 'src/models';
+import { selectUser } from 'src/redux/actions/userActions';
 import { getUsers } from 'src/redux/selectors/usersSelectors';
 import { isDefined } from 'src/utils/typeguards';
-import { selectUser } from 'src/redux/actions/userActions';
-import { User } from 'src/models';
 
 export const UserInfoModal: FC = () => {
   const { selectedUser } = useSelector(getUsers);

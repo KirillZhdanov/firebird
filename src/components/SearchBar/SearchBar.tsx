@@ -1,7 +1,8 @@
+import 'src/components/SearchBar/SearchBar.scss';
+
 import { KeyboardEventHandler, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchUsers, searchUser } from 'src/redux/actions/userActions';
-import 'src/components/SearchBar/SearchBar.scss';
 
 const ENTER_KEY = 'Enter';
 

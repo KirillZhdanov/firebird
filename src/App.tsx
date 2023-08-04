@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { fetchUsers } from 'src/redux/actions/userActions';
 import { CardsList, SearchBar, UserInfoModal } from 'src/components';
+import { fetchUsers } from 'src/redux/actions/userActions';
 
 function App() {
   const dispatch = useDispatch();

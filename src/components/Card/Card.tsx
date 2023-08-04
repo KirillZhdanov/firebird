@@ -1,9 +1,10 @@
 import 'src/components/Card/Card.scss';
+
+import type { FC, MouseEvent } from 'react';
 import { FaTimes } from 'react-icons/fa';
-import { highlightIfMatch } from 'src/utils/highlightIfMatch';
 import { useDispatch } from 'react-redux';
 import { selectUser } from 'src/redux/actions/userActions';
-import type { FC, MouseEvent } from 'react';
+import { highlightIfMatch } from 'src/utils/highlightIfMatch';
 
 interface Props {
   id: number;

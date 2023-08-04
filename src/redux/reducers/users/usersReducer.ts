@@ -1,4 +1,3 @@
-import { isDefined } from 'src/utils/typeguards';
 import {
   REMOVE_USER,
   SEARCH_USER,
@@ -7,6 +6,7 @@ import {
   SET_USERS_DATA,
 } from 'src/redux/actions/userActions';
 import { Action, UsersState } from 'src/redux/types';
+import { isDefined } from 'src/utils/typeguards';
 
 const initialState: UsersState = {
   users: [],

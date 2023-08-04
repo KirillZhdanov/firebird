@@ -1,6 +1,6 @@
-import { applyMiddleware, createStore, compose } from 'redux';
-import rootReducer from 'src/redux/reducers/mainReducer';
+import { applyMiddleware, compose, createStore } from 'redux';
 import createSagaMiddleware from 'redux-saga';
+import rootReducer from 'src/redux/reducers/mainReducer';
 import { rootWatcher } from 'src/redux/sagas';
 
 declare global {

@@ -1,8 +1,9 @@
+import 'src/components/CardsList/CardsList.scss';
+
 import { useDispatch, useSelector } from 'react-redux';
-import { getUsers } from 'src/redux/selectors/usersSelectors';
 import { Card } from 'src/components';
 import { removeUser } from 'src/redux/actions/userActions';
-import 'src/components/CardsList/CardsList.scss';
+import { getUsers } from 'src/redux/selectors/usersSelectors';
 
 export const CardsList = () => {
   const { users, loading, searchText } = useSelector(getUsers);

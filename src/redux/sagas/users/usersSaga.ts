@@ -1,7 +1,7 @@
-import { takeEvery, call, put } from 'redux-saga/effects';
+import { call, put, takeEvery } from 'redux-saga/effects';
 import { FETCH_USERS, setLoadingUsers, setUsersData } from 'src/redux/actions/userActions';
-import { normalizeUsers } from 'src/utils/normalizeUsers';
 import { UsersResponse } from 'src/redux/types';
+import { normalizeUsers } from 'src/utils/normalizeUsers';
 
 const FETCH_USERS_URL = 'https://jsonplaceholder.typicode.com/users';
 
