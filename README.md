@@ -49,11 +49,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### ESLint
 
-[ESLint](https://eslint.org) is provided by standard CRA configuration. The configuration can be changed using your custom `.eslintrc` configuration.
+[ESLint](https://eslint.org) is provided by `.eslintrc` configuration.
 
 ### Prettier
 
-[Prettier](https://prettier.io) is a library that formats all the code in a strict way. The formatting rules are fetched from `.prettierrc.js`.
+[Prettier](https://prettier.io) is a library that formats all the code in a strict way. The formatting rules are fetched from `.prettierrc`.
 
 ## State management
 
