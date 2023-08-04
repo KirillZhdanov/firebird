@@ -1,6 +1,7 @@
 import 'src/components/SearchBar/SearchBar.scss';
 
-import { KeyboardEventHandler, useState } from 'react';
+import type { KeyboardEventHandler } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchUsers, searchUser } from 'src/redux/actions/userActions';
 
